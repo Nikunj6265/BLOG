@@ -1,0 +1,15 @@
+{% extends "blog_app/base.html" %}
+
+{% block content %}
+<div class="container" >
+    <div class="card">
+        <h5 class="card-header">{{blog.title}}</h5>
+        <div class="card-body">
+          <h5 class="card-title">{{blog.author}}</h5>
+          <p class="card-text">{{blog.content}}</p>
+          <a href="{%url 'home' %}" class="btn btn-primary">Back</a>
+        </div>
+      </div>
+</div>
+
+{% endblock  %}
